@@ -9,5 +9,11 @@
     "express": "^4.17.1",
     "knex": "^0.20.10",
     "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
   }
 }
