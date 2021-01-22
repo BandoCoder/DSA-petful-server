@@ -13,7 +13,7 @@ module.exports = {
   get() {
     // Return all people in the queue.
     let input = people.all();
-    const peopleArr = input.reverse();
+    const peopleArr = input;
     return peopleArr;
   },
 
