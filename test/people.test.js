@@ -10,4 +10,18 @@ describe(`People endpoints`, () => {
         .expect(200, ["Randy Lahey", "Trevor Cory", "Jim Lahey"]);
     });
   });
+  describe(`POST '/people'`, () => {
+    it("Response 201 and adds name to people queue", () => {
+      const newName = { name: "Saul Goodman" };
+      return supertest(app)
+        .post("/people")
+        .send(newName)
+        .expect(201, [
+          "Randy Lahey",
+          "Trevor Cory",
+          "Jim Lahey",
+          "Saul Goodman",
+        ]);
+    });
+  });
 });

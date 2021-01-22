@@ -7,11 +7,12 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   // Return all the people currently in the queue.
-  res.json(People.get());
+  res.status(200).json(People.get());
 });
 
 router.post("/", json, (req, res) => {
   // Add a new person to the queue.
+  res.status(201).json(People.enqueue(req.body.name));
 });
 
 module.exports = router;

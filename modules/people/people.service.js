@@ -19,7 +19,9 @@ module.exports = {
 
   enqueue(person) {
     // Add a person to the queue.
-    return people.enqueue(person);
+    people.enqueue(person);
+    let input = people.all();
+    return input;
   },
 
   dequeue() {
