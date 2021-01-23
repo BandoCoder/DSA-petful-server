@@ -2,8 +2,8 @@
   "name": "petful-server",
   "scripts": {
     "test": "mocha --require test/testSetup.js",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku main"
   },
@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.20.10",
+    "morgan": "^1.10.0",
     "pg": "^7.18.2",
     "router": "^1.3.5"
   },
