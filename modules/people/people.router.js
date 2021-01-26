@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 router.post("/", json, (req, res) => {
   // Add a new person to the queue.
   People.enqueue(req.body.name);
-  return res.status(201).end();
+  return res.status(201).json(People.get());
 });
 
 router.delete("/", (req, res) => {
