@@ -1,5 +1,11 @@
 # PETFUL API
 
+[Client Repo]https://github.com/BandoCoder/DSA-petful-client
+
+## Tech
+
+Node.js, chai, mocah, nodemon. Used a queue data structure to facilitate FIFO behavior.
+
 #### GET People
 
 Endpoint for getting the people in the queue
