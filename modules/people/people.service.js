@@ -26,6 +26,7 @@ module.exports = {
 
   dequeue() {
     // Remove a person from the queue.
-    return people.dequeue();
+    let peep = people.dequeue();
+    return peep;
   },
 };
